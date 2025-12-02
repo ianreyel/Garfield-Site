@@ -66,7 +66,7 @@ Um site de rede social dedicado ao famoso gato Garfield, onde fãs podem compart
 
 ### 2. Fazer Login
 
-- Vá para http://localhost/sarah/public/login.php
+- Vá para http://localhost/
 - Digite e-mail/usuário e senha
 - Será redirecionado para o feed
 
