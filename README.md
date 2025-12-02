@@ -60,7 +60,7 @@ Um site de rede social dedicado ao famoso gato Garfield, onde fãs podem compart
 
 ### 1. Criar Conta
 
-- Acesse http://localhost/sarah/public/new-user.php
+- Acesse http://localhost/
 - Preencha e-mail, usuário e senha
 - Clique em "Cadastrar"
 
