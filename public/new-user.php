@@ -18,7 +18,7 @@
                     <input type="text" name="username" minlength="4" class="input-field" autocomplete="off" required placeholder="Nome"/> <br>
                     <input type="email" name="email" minlength="4" class="input-field" autocomplete="off" required placeholder="Email"/> <br>
                     <input type="password" name="password" minlenght="4" maxlength="16" class="input-field" autocomplete="off" required placeholder="Senha"/> <br>
-                    <input type="text" name="conteudo" placeholder="Insira uma Bio para que todos saibam o quanto você ama o Garfield" maxlength="100">
+                    <input type="text" name="conteudo" placeholder="Insira uma Bio para que todos saibam o quanto você ama o Garfield" required maxlength="100">
                     <input type="submit" value="Cadastrar-se" class="sign-btn">
             </form>
         </div>

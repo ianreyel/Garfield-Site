@@ -26,7 +26,7 @@
 				if($res->num_rows != 0) {
 					echo 'Você ja tem uma conta! <a href="login.php" style="margin-top: 20px; display: inline-block; text-decoration: none; color:#ff9d00;">Faça login aqui</a>.';
 				} else {  
-					$insert = "INSERT INTO tb_user (email, username, is_admin, senha, bios) VALUES ('". $email ."', '". $name ."', 0, '". $password ."', '". $bio ."')";
+					$insert = "INSERT INTO tb_user (email, username, is_admin, senha, bios, img_perfil) VALUES ('". $email ."', '". $name ."', 0, '". $password ."', '". $bio ."',0)";
 					if ($list = $mysqli->query($insert)) {
 						header('Location: ../public/home.php');
 					} else {

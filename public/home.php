@@ -21,15 +21,18 @@
         <section id="posts">
             <?php 
                 $sql = "SELECT
+
                         p.titulo AS titulo_post,
                         p.dsc_post,
                         u.username AS nome_usuario,
                         p.img_post1,
-                        p.img_post2
+                        p.img_post2,
+                        p.cd_post
                             FROM
                         tb_post p
                             JOIN
-                        tb_user u ON p.user = u.cd_user;";
+                        tb_user u ON p.user = u.cd_user 
+                        ORDER BY p.cd_post DESC;";
                 $res = $mysqli->query($sql);
 
                 while ($row = $res->fetch_object()) {
@@ -48,6 +51,10 @@
                         echo "<img src='$dir_img' alt='Imagem do Post 1' style='max-width: 300px; height: auto;'>"; 
                     }
                     echo "<p>" . $row->dsc_post . "</p>";
+                    echo "<form action='comentarios_post.php' method='POST'>
+                                    <input type='hidden' name='post' value=".$row->cd_post.">
+                                    <button type='submit'>Comentar</button>
+                                    </form>";
                     echo "</div>";
                     echo "<hr>";
                 }
